@@ -1,0 +1,15 @@
+.skill {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.skill > h3 {
+  text-align: end;
+  background-color: gold;
+}
+.skillHold {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

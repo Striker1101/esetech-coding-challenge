@@ -1,0 +1,33 @@
+.education {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.education > h3 {
+  text-align: end;
+  background-color: gold;
+}
+.educationContents {
+  display: flex;
+  width: 100%;
+  gap:25px
+}
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 10px;
+
+}
+.step.two {
+  width: 50px;
+}
+.textArea,
+.textName {
+  width:300px;
+  text-align: center;
+  white-space: wrap;
+  overflow-wrap: break-word;
+}

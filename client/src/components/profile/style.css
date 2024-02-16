@@ -1,0 +1,28 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+#profileImage {
+  overflow: hidden;
+  height: 120px;
+  width: 100%;
+  max-width: 120px;
+  border-radius: 100px;
+  border: 2px solid gold;
+  z-index: 1;
+}
+.profileCover {
+  background-color: gold;
+  position: relative;
+  padding: 0 50px;
+  right: 20px;
+}
+.profileText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: gold;
+}

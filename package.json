@@ -1,0 +1,25 @@
+{
+  "name": "esetech-coding-challenge",
+  "version": "1.0.0",
+  "description": "Hello there! 👋",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Striker1101/esetech-coding-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Striker1101/esetech-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/Striker1101/esetech-coding-challenge#readme",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

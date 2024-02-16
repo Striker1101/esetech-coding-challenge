@@ -1,0 +1,27 @@
+.contact {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact > h3 {
+  text-align: end;
+  background-color: gold;
+}
+.contactContents {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.hold {
+  display: flex;
+  gap: 10px;
+}
+contacth4{
+  text-align: center;
+  padding: 10px;
+  white-space: wrap;
+  overflow-wrap: break-word;
+}
+.contactImg {
+  width: 20px;
+}
