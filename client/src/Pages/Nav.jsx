@@ -1,29 +1,28 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
-function Nav({ isLoggedIn }) {
-  function Logout() {
+function NavBar({ isLoggedIn }) {
+  function logout() {
     console.log("out");
   }
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">EseTech</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">CV</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/cv">CV</Nav.Link>
             {isLoggedIn ? (
               <Nav.Link href="#" onClick={logout}>
                 Logout
               </Nav.Link>
             ) : (
               <>
-                <Nav.Link href="#home">Login</Nav.Link>
-                <Nav.Link href="#link">Signup</Nav.Link>
+                <Nav.Link href="/login">Login</Nav.Link>
+                <Nav.Link href="/signup">Signup</Nav.Link>
               </>
             )}
           </Nav>
@@ -33,4 +32,4 @@ function Nav({ isLoggedIn }) {
   );
 }
 
-export default Nav;
+export default NavBar;
