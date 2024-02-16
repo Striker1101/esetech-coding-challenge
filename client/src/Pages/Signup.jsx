@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-export default function Login() {
+export default function Signup() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
