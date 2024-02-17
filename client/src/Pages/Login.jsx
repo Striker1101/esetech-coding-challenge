@@ -107,9 +107,6 @@ export default function Signup() {
         </Modal.Header>
         <Modal.Body>{reply.body}</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
         </Modal.Footer>
       </Modal>
       <Form

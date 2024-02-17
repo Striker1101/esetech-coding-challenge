@@ -33,4 +33,8 @@ router.put("/editdetails", authenticate, (req, res) => {
   userController.firebase_editDetails(req, res);
 });
 
+router.get("/:uid", authenticate, (req, res) => {
+  userController.firebase_getDetails(req, res);
+});
+
 module.exports = router;
