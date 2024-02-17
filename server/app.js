@@ -4,12 +4,10 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 require("dotenv").config();
 const admin = require("firebase-admin");
-
-var indexRouter = require("./routes/index");
-
-var app = express();
+const cors = require("cors");
 
 const serviceAccount = require("./esetech-fcb5e-firebase-adminsdk-5plb5-fcd345e048.json");
+var app = express();
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -20,9 +18,13 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cors());
 
-app.use("/api/", indexRouter);
-app.use("/api/auth", require("./routes/users"));
+app.use("/api", require("./routes/API"));
+
+app.use("/api/auth", require("./routes/API/auth"));
+
+app.use("/api/user", require("./routes/API/user"));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

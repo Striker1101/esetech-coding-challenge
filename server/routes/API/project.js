@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 
 
-const projectController = require("../controllers/projectController");
+const projectController = require("../../controllers/projectController");
 /* GET users listing. */
 
 router.post("project", projectController.project_post);

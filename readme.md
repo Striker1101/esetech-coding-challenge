@@ -12,3 +12,5 @@
 - clone project 
 - npm i in `/` , `/server`, `/client`
 - npm run start would start concurrently, running react and express in terminal
+
+([particles-bg](https://github.com/lindelof/particles-bg))
