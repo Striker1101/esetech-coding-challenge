@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Striker1101/esetech-coding-challenge#readme",
   "dependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "mdb-react-ui-kit": "^7.2.0"
   }
 }
